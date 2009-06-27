@@ -3,12 +3,13 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Automatic Trait Loading and Resolution for
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source:     http://www.cpan.org/modules/by-module/CatalystX/%{upstream_name}-%{upstream_version}.tar.gz
+Requires: perl(MooseX::Traits::Pluggable)
 BuildRequires: perl(Catalyst::Runtime)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(List::MoreUtils)
