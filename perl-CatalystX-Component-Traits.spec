@@ -1,15 +1,16 @@
-%define upstream_name   CatalystX-Component-Traits
-%define upstream_version    0.03
+%define upstream_name    CatalystX-Component-Traits
+%define upstream_version 0.04
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
-License:    GPL or Artistic
-Group:      Development/Perl
+Release:    %mkrel 1
+
 Summary:    Automatic Trait Loading and Resolution for
+License:    GPL+ or Artistic
+Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source:     http://www.cpan.org/modules/by-module/CatalystX/%{upstream_name}-%{upstream_version}.tar.gz
-Requires: perl(MooseX::Traits::Pluggable)
+Source0:    http://www.cpan.org/modules/by-module/CatalystX/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl(Catalyst::Runtime)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(List::MoreUtils)
@@ -18,7 +19,8 @@ BuildRequires: perl(MooseX::Traits::Pluggable)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(namespace::autoclean)
 BuildArch: noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
+BuildRoot: %{_tmppath}/%{name}-%{version}
+Requires: perl(MooseX::Traits::Pluggable)
 
 %description
 Adds a the Catalyst::Component/COMPONENT manpage method to your the
@@ -49,5 +51,4 @@ rm -rf %buildroot
 %doc README Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
 
