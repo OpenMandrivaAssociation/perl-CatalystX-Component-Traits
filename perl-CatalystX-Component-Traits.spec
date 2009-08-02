@@ -1,5 +1,5 @@
 %define upstream_name    CatalystX-Component-Traits
-%define upstream_version 0.06
+%define upstream_version 0.08
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -51,4 +51,3 @@ rm -rf %buildroot
 %doc README Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
