@@ -14,6 +14,7 @@ Source0:    http://www.cpan.org/modules/by-module/CatalystX/%{upstream_name}-%{u
 BuildRequires: perl(Catalyst::Runtime)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(List::MoreUtils)
+BuildRequires: perl(Module::Pluggable)          >= 3.900.0
 BuildRequires: perl(Moose::Autobox)
 BuildRequires: perl(MooseX::Traits::Pluggable)
 BuildRequires: perl(Test::More)
