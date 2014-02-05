@@ -1,15 +1,15 @@
 %define upstream_name    CatalystX-Component-Traits
-%define upstream_version 0.16
+%define upstream_version 0.19
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Automatic Trait Loading and Resolution for
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/CatalystX/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/CatalystX/CatalystX-Component-Traits-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Catalyst::Runtime)
@@ -96,4 +96,5 @@ make test
 
 * Sun Jun 21 2009 cpan2dist 0.03-1mdv
 - initial mdv release, generated with cpan2dist
+
 
