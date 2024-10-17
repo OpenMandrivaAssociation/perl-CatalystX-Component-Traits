@@ -8,7 +8,7 @@ Release:	3
 Summary:	Automatic Trait Loading and Resolution for
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/CatalystX/CatalystX-Component-Traits-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
