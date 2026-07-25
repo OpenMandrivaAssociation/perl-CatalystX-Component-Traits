@@ -2,14 +2,14 @@
 %define upstream_version 0.19
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	Automatic Trait Loading and Resolution for
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/CatalystX/CatalystX-Component-Traits-%{upstream_version}.tar.gz
+Url:		https://github.com/rkitover/catalystx-component-traits
+Source0:	https://cpan.metacpan.org/authors/id/R/RK/RKITOVER/CatalystX-Component-Traits-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
