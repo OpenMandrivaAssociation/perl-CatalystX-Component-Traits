@@ -1,15 +1,13 @@
 %define upstream_name    CatalystX-Component-Traits
-%define upstream_version 0.19
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.19
+Release:	5
 
 Summary:	Automatic Trait Loading and Resolution for
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/rkitover/catalystx-component-traits
-Source0:	https://cpan.metacpan.org/authors/id/R/RK/RKITOVER/CatalystX-Component-Traits-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RK/RKITOVER/CatalystX-Component-Traits-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -32,7 +30,7 @@ subclass with those traits using the MooseX::Traits/new_with_traits manpage
 from the MooseX::Traits::Pluggable manpage.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{version} 
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
